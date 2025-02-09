@@ -1,0 +1,25 @@
+/* bugSolution.css */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+}
+
+/* Avoid unnecessary use of !important, and instead adjust specificity */
+.container .item.highlight {
+  background-color: lightgreen;
+}
+
+/* More specific selectors override styles properly */
+.container .item:first-child {
+  background-color: yellow;
+} 
+.container .item:last-child{
+  background-color: orange;
+}
